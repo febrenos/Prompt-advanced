@@ -1,0 +1,144 @@
+ *MainPage.xaml*
+<TabbedPage <ContentPage Title="Page1" >
+    <ContentPage.Content>
+        <StackLayout  VerticalOptions="Center" HorizontalOptions="Center">
+            <Label Text="BEM VINDO AO TABBED PAGE"/>
+        </StackLayout>
+    </ContentPage.Content>
+
+    </ContentPage>
+
+    <ContentPage Title="Page2" >
+        <ContentPage.Content>
+            <StackLayout  VerticalOptions="Center" HorizontalOptions="Center">
+                <Label Text="BEM VINDO A PÁGINA 2"/>
+            </StackLayout>
+        </ContentPage.Content>
+    </ContentPage>
+
+    <ContentPage Title="Page3" >
+        <ContentPage.Content>
+            <StackLayout  VerticalOptions="Center" HorizontalOptions="Center">
+                <Label Text="BEM VINDO A PÁGINA 3"/>
+            </StackLayout>
+        </ContentPage.Content>
+    </ContentPage>
+
+
+    Definir a root do local:
+
+xmlns:local="clr-namespace:TabbedPage_App;assembly=TabbedPage_App" >
+
+    <StackLayout>
+        <!-- Place new controls here -->
+        <Label Text="Welcome to Xamarin.Forms!" 
+           HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand" />
+    </StackLayout>
+
+</TabbedPage>
+
+
+
+*MainPage.xaml.cs*
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Xamarin.Forms;
+
+namespace TabbedPage_App
+{
+    // Learn more about making custom code visible in the Xamarin.Forms previewer
+    // by visiting https://aka.ms/xamarinforms-previewer
+    [DesignTimeVisible(false)]
+    public partial class MainCarouselPage : CarouselPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+        }
+    }
+}
+*MainPage.xaml.cs*
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Xamarin.Forms;
+
+namespace TabbedPage_App
+{
+    // Learn more about making custom code visible in the Xamarin.Forms previewer
+    // by visiting https://aka.ms/xamarinforms-previewer
+    [DesignTimeVisible(false)]
+    public partial class MainCarouselPage : TabbedPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+        }
+    }
+}
+**********************************************8
+Coursel
+
+*MainPage.xaml.cs*
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Xamarin.Forms;
+
+namespace TabbedPage_App
+{
+    // Learn more about making custom code visible in the Xamarin.Forms previewer
+    // by visiting https://aka.ms/xamarinforms-previewer
+    [DesignTimeVisible(false)]
+    public partial class MainCarouselPage : CarouselPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+        }
+    }
+}
+
+<CarouselPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:local="clr-namespace:Carousel;assembly=Carousel" 
+             mc:Ignorable="d"
+             x:Class="Carousel.MainCarouselPage">
+    <local:Page1/>
+    <local:Page2/>
+    <ContentPage BackgroundColor="Bisque">
+        <ContentPage.Content>
+            <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+                <Label Text="I am page 1!" />
+        </StackLayout>
+    </ContentPage.Content>
+    </ContentPage>
+
+    <ContentPage BackgroundColor="Blue">
+        <ContentPage.Content>
+            <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+                <Label Text="I am page 2!" />
+            </StackLayout>
+        </ContentPage.Content>
+    </ContentPage>
+
+    <ContentPage BackgroundColor="Orange">
+        <ContentPage.Content>
+            <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+                <Label Text="I am page 3!" />
+            </StackLayout>
+        </ContentPage.Content>
+    </ContentPage>
+
+
+</CarouselPage>
