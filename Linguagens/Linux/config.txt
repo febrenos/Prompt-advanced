@@ -1,0 +1,59 @@
+DATE
+date mmddhhmmyyyy.ss
+relogio
+date +%y%m%d -s 20120408
+date -s "04/08/2012 15:53:13"
+date +%T -s "15:53:13"
+date +%T%p -s "03:53:13PM"
+
+RESOLUTION
+xrandr newmod
+xrandr
+
+COMPACT
+unzip nomedoarquivo.zip (zip)
+unrar x nomedoarquivo.rar (rar)
+tar -xvf nomedoarquivo.tar (tar)
+tar -vzxf nomedoarquivo.tar.gz (tar.gz)
+bunzip nomedoarquivo.bz2 (bz2)
+tar -jxvf nomedoarquivo (tar.bz2)
+
+tar -czf projetos.tar.gz Projetos/ (compact)
+tar -xzf projetos.tar.gz (unzip)
+-v (verbose, details)
+
+WLAN
+iwlist
+iwconfig
+rfkill list
+rfkill unblock wifi
+rfkill unlock wifi
+lsmod
+lspci
+modinfo 'x'
+airmon-ng
+ip a
+ping 8.8.8.8
+sudo systemctl status NetworkManager
+sudo systemctl stop NetworkManager
+ip a
+sudo systemctl start NetworkManager
+dmesg | grep wifi
+lsusb
+dmesg | grep r8169
+
+INSTALL
+sudo dpkg -i x
+sudo apt install xdg-utils
+
+sudo apt-get install nomedoprograma
+sudo apt-get install gimp
+
+REMOVE
+sudo apt-get remove nomedoprograma
+sudo apt-get  purge nomedoprograma (remove congfig about user)
+sudo apt-get purge gimp
+
+ADD USER
+useradd -m chromeuser or adduser -u chromeuser
+gksu -u chromeuser google-chrome
