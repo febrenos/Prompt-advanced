@@ -1,3 +1,8 @@
+SYSTEM
+uname -m
+uname -a
+gdisk
+
 DATE
 date mmddhhmmyyyy.ss
 relogio
@@ -7,8 +12,10 @@ date +%T -s "15:53:13"
 date +%T%p -s "03:53:13PM"
 
 RESOLUTION
-xrandr newmod
 xrandr
+xrandr newmod
+xrandr --addmode VGA-0 1680x1050_60.00
+xrandr --addmode VGA-0 1680x1050_60.00
 
 COMPACT
 unzip nomedoarquivo.zip (zip)
