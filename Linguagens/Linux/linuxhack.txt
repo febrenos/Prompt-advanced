@@ -1,0 +1,17 @@
+NUMBERS
+prime number
+factor "x"
+aleatory
+$random
+echo $[ 1 + $[ RANDOM % 10 ]]
+
+
+LETTERS
+rev "Hello word!"
+yes "Hello word!"
+
+
+IMG
+img caractere
+sudo apt-get install aview imagemagick
+asciiview nomedafoto.png

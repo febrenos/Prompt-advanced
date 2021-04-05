@@ -1,7 +1,12 @@
 SYSTEM
+systemctl suspend
+systemctl hibernate
+reboot system
+shutdowm now
 uname -m
 uname -a
 gdisk
+
 
 DATE
 date mmddhhmmyyyy.ss
