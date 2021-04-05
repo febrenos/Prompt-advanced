@@ -55,7 +55,7 @@ lsusb
 dmesg | grep r8169
 
 INSTALL
-sudo dpkg -i x
+sudo dpkg -i nomearquivo.deb
 sudo apt install xdg-utils
 
 sudo apt-get install nomedoprograma
@@ -69,3 +69,9 @@ sudo apt-get purge gimp
 ADD USER
 useradd -m chromeuser or adduser -u chromeuser
 gksu -u chromeuser google-chrome
+
+GIT
+git config
+git config --global user.name "Fulano de Tal"
+git config --global user.email "Fulano de Tal"
+git config --list
