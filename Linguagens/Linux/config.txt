@@ -6,7 +6,10 @@ shutdowm now
 uname -m
 uname -a
 gdisk
-
+top
+netstat
+vmstat
+ps
 
 DATE
 date mmddhhmmyyyy.ss
@@ -56,7 +59,9 @@ dmesg | grep r8169
 
 INSTALL
 sudo dpkg -i nomearquivo.deb
+sudo dpkg -i *.deb
 sudo apt install xdg-utils
+apt --fix-broken install
 
 sudo apt-get install nomedoprograma
 sudo apt-get install gimp

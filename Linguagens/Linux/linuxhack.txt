@@ -15,3 +15,12 @@ IMG
 img caractere
 sudo apt-get install aview imagemagick
 asciiview nomedafoto.png
+
+WEBCAN
+windonws > prokmon (filter search operational RegSetValue)
+painel de controle webcam (inspect)
+linux > metapreter(metasploit)
+webcam_list
+reg enumkey -k "./x/x" -v nomeondeacessar
+screenshot
+reboot
